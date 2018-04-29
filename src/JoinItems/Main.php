@@ -9,7 +9,7 @@ use pocketmine\event\player\PlayerJoinEvent;
 class Main extends PluginBase implements Listener {
     
     public function onEnable(): void {
-        $this->getLogger->info("Plugin has been enabled.");
+        $this->getLogger()->info("Plugin has been enabled.");
     }
     public function onJoin(PlayerJoinEvent $event){
         $inv = $player->getInventory();
