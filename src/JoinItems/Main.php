@@ -1,6 +1,6 @@
 <?php
 
-namespace JoinItems\Main;
+namespace JoinItems;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
