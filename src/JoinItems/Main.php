@@ -15,8 +15,8 @@ class Main extends PluginBase implements Listener {
         $inv = $player->getInventory();
         $inv->clearAll();
         
-        $hub = Item::get(345, 1, 1);
-        $hub->setCustomName(TextFormat::GOLD . "Server Selector!");
-        $inv->setItem(0, $hub);
+        $hub = Item::get(399, 1, 1);
+        $hub->setCustomName(TextFormat::GOLD . "SkyBlockUi!");
+        $inv->setItem(9, $hub);
     }
 }
