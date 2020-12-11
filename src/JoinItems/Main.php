@@ -2,21 +2,30 @@
 
 namespace JoinItems;
 
-use pocketmine\plugin\PluginBase;
-use pocketmine\event\Listener;
+use pocketmine\server;
+use pocketmine\player;
 use pocketmine\event\player\PlayerJoinEvent;
+use pocketmine\event\Listener 
+use pocketmine\utils\Textformat;
+use pocketmine\Item\Item;
+use pocketmine\nbt\tag\StringTag;
+use pocketmine\event\player\PlayerInteractEvent 
 
 class Main extends PluginBase implements Listener {
     
     public function onEnable(): void {
+       $this->getserver()->getPluginManager()->registerEvents($this, $this;
+    }
+                                                              
+                                                              
+           
+        
         $this->getLogger()->info("Plugin has been enabled.");
     }
-    public function onJoin(PlayerJoinEvent $event){
-        $inv = $player->getInventory();
-        $inv->clearAll();
+    
         
-        $hub = Item::get(399, 1, 1);
-        $hub->setCustomName(TextFormat::GOLD . "SkyBlockUi!");
-        $inv->setItem(9, $hub);
-    }
-}
+       
+        
+       
+        
+       
